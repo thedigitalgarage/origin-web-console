@@ -638,11 +638,6 @@ a[href$="create-project"]:active:hover {
     border-bottom: 1px dotted #47B04B;
 }
 
-.pod-block .overview-pods .scaling-controls a:active,
-.pod-block .overview-pods .scaling-controls a:hover {
-    color: #47B04B;
-}
-
 /* Metrics Chart START */
 .metrics-chart .sparkline-chart .c3 .c3-axis path,
 .metrics-chart .sparkline-chart .c3 .c3-axis line {
@@ -669,9 +664,16 @@ a[href$="create-project"]:active:hover {
 .overview .standalone-service-row .service-group::before {
     background: #57cb5b;
 }
+.overview .unserviced-row .no-service::before {
+	background: #57cb5b;
+}
 .overview .no-child-services-message,
 .overview .no-deployments-message {
     background-color: #fcfcfc;
+}
+.overview .no-child-services-message h2:first-child,
+.overview .no-deployments-message h2:first-child {
+    color: #666;
 }
 .overview .service-title .service-name .pficon {
     color: #47b04b;
@@ -679,6 +681,15 @@ a[href$="create-project"]:active:hover {
 .build-pipeline-collapsed,
 .triggers .build {
     border: 1px solid #F0F0F0;
+}
+.overview .deployment-tile .overview-unsuccessful-state .text-danger {
+    color: #a50f0f;
+}
+.text-danger {
+    color: #a50f0f;
+}
+.overview .service-group-header .route-title .fa-external-link {
+    color: #52C256;
 }
 /* Overview Page END */
 
@@ -715,6 +726,11 @@ a[href$="create-project"]:active:hover {
 	background: #52C256 !important;
 }
 
+.pod-block .overview-pods .scaling-controls a:active,
+.pod-block .overview-pods .scaling-controls a:hover {
+    color: #47B04B;
+}
+
 .pod-donut .c3-chart-arcs .c3-arc-Running {
 	fill: #52C256 !important;
 }
@@ -731,23 +747,33 @@ a[href$="create-project"]:active:hover {
 	fill: #F9D67A !important;
 }
 
-.pod-donut .c3-tooltip .c3-tooltip-name-Running .name span {
+.pod-donut .c3-tooltip .c3-tooltip-name--Running .name span {
 	background: #52C256 !important;
 }
-.pod-donut .c3-tooltip .c3-tooltip-name-Terminating .name span {
+.pod-donut .c3-tooltip .c3-tooltip-name--Terminating .name span {
 	background: #52C256 !important;
 }
-.pod-donut .c3-tooltip .c3-tooltip-name-Not.Ready .name span {
+.pod-donut .c3-tooltip .c3-tooltip-name--Not-Ready .name span {
 	background: #52C256 !important;
 }
-.pod-donut .c3-tooltip .c3-tooltip-name-Succeeded .name span {
+.pod-donut .c3-tooltip .c3-tooltip-name--Succeeded .name span {
 	background: #52C256 !important;
 }
-.pod-donut .c3-tooltip .c3-tooltip-name-Unknown .name span {
+.pod-donut .c3-tooltip .c3-tooltip-name--Unknown .name span {
 	background: #52C256 !important;
+}
+.deployment-donut .scaling-controls a:active,
+.deployment-donut .scaling-controls a:hover, {
+    color: #47B04B;
 }
 /* Overview Chart END */
 
+.active-filters .label-filter-active-filters .label {
+	background: #47b04b;
+}
+.active-filters .label-filter-active-filters .label:hover {
+	background: #E7FFE7;
+}
 .btn-default.actions-dropdown-btn {
 	color: #4caf50;
 	background: url("../extensions/images/ic_actions_btn.png") transparent center;
