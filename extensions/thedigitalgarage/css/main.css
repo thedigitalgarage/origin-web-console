@@ -126,14 +126,14 @@ label {
 	padding-top: 15px;
 }
 
-.alert-info {
+/*.alert-info {
     background-color: #E7FFE7;
     border-color: #47B04B;
     color: #365A36;
 }
 	.alert .pficon-info {
 	    color: #47B04B;
-	}
+	}*/
 
 .action-button {
     color: #47B04B;
@@ -664,6 +664,24 @@ a[href$="create-project"]:active:hover {
 }
 /* Metrics Chart START */
 
+/* Overview Page START */
+.overview .service-group-with-route-row .service-group::before,
+.overview .standalone-service-row .service-group::before {
+    background: #57cb5b;
+}
+.overview .no-child-services-message,
+.overview .no-deployments-message {
+    background-color: #fcfcfc;
+}
+.overview .service-title .service-name .pficon {
+    color: #47b04b;
+}
+.build-pipeline-collapsed,
+.triggers .build {
+    border: 1px solid #F0F0F0;
+}
+/* Overview Page END */
+
 /* Overview Chart START */
 .pod-status-chart .c3-chart-arcs .c3-arc-Running {
 	fill: #52C256 !important;
@@ -694,6 +712,38 @@ a[href$="create-project"]:active:hover {
 	background: #52C256 !important;
 }
 .pod-status-chart .c3-tooltip .c3-tooltip-name-Unknown .name span {
+	background: #52C256 !important;
+}
+
+.pod-donut .c3-chart-arcs .c3-arc-Running {
+	fill: #52C256 !important;
+}
+.pod-donut .c3-chart-arcs .c3-arc-Terminating {
+	fill: #FFEB3B !important;
+}
+.pod-donut .c3-chart-arcs .c3-arc-Not-Ready {
+	fill: #FFEB3B !important;
+}
+.pod-donut .c3-chart-arcs .c3-arc-Succeeded {
+	fill: #1E7A21 !important;
+}
+.pod-donut .c3-chart-arcs .c3-arc-Unknown {
+	fill: #F9D67A !important;
+}
+
+.pod-donut .c3-tooltip .c3-tooltip-name-Running .name span {
+	background: #52C256 !important;
+}
+.pod-donut .c3-tooltip .c3-tooltip-name-Terminating .name span {
+	background: #52C256 !important;
+}
+.pod-donut .c3-tooltip .c3-tooltip-name-Not.Ready .name span {
+	background: #52C256 !important;
+}
+.pod-donut .c3-tooltip .c3-tooltip-name-Succeeded .name span {
+	background: #52C256 !important;
+}
+.pod-donut .c3-tooltip .c3-tooltip-name-Unknown .name span {
 	background: #52C256 !important;
 }
 /* Overview Chart END */
