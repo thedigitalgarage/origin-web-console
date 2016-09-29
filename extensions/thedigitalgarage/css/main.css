@@ -94,6 +94,11 @@ label {
 	color: #47b04b;
 }
 
+code {
+    color: #365A36;
+    background-color: #E7FFE7;
+}
+
 .help-block {
 	color: #999;
 }
@@ -126,14 +131,21 @@ label {
 	padding-top: 15px;
 }
 
-/*.alert-info {
+.alert-info {
     background-color: #E7FFE7;
     border-color: #47B04B;
     color: #365A36;
 }
-	.alert .pficon-info {
+	.alert-info .pficon {
 	    color: #47B04B;
-	}*/
+	}
+.toast-pf.alert-info {
+    background-color: rgba(255,255,255,.94);
+    color: #363636;
+}
+	.toast-pf.alert-info > .pficon {
+	    background-color: #8b8d8f;
+	}
 
 .action-button {
     color: #47B04B;
@@ -156,6 +168,13 @@ label {
 
 .selectize-control.plugin-remove_button [data-value] .remove {
     border-left: 1px solid #469249;
+}
+
+ul.registry-image-layers li::before {
+	color: #47B04B;
+}
+.registry-image-pull .fa-info-circle {
+    color: #47B04B;
 }
 
 a[href$="create-project"] {
@@ -199,35 +218,11 @@ a[href$="create-project"]:active:hover {
 	    color: #FFF;
 	    border: 0;
 	}
-	/*.navbar-pf-alt .nav-item-iconic:hover,
-	.navbar-pf-alt .nav-item-iconic:focus {
-        color: #0c4f63;
-	    outline: 0 !important;
-	    background-color: transparent;
-	    border: 0;
-	}*/
 		.navbar-pf-alt .nav .nav-item-iconic .caret,
 		.navbar-pf-alt .nav .nav-item-iconic .fa,
 		.navbar-pf-alt .nav .nav-item-iconic .pf-icon {
 		    color: #FFF;
 		}
-			/*.navbar-pf-alt .nav-item-iconic:hover .caret,
-			.navbar-pf-alt .nav-item-iconic:hover .fa,
-			.navbar-pf-alt .nav-item-iconic:hover .pf-icon{
-		        color: #0c4f63;
-			    background-color: transparent;
-			}*/
-			/*.navbar-pf-alt .open > .nav-item-iconic .caret,
-			.navbar-pf-alt .open > .nav-item-iconic .fa,
-			.navbar-pf-alt .open > .nav-item-iconic .pf-icon,
-			.navbar-pf-alt .open > .nav-item-iconic:focus .caret,
-			.navbar-pf-alt .open > .nav-item-iconic:focus .fa,
-			.navbar-pf-alt .open > .nav-item-iconic:focus .pf-icon,
-			.navbar-pf-alt .open > .nav-item-iconic:hover .caret,
-			.navbar-pf-alt .open > .nav-item-iconic:hover .fa,
-			.navbar-pf-alt .open > .nav-item-iconic:hover .pf-icon {
-			    color: #0c4f63;
-			}*/
 
 	.navbar-pf-alt .navbar-toggle .icon-bar {
 		background: #FFF;
@@ -528,35 +523,35 @@ a[href$="create-project"]:active:hover {
     background-image: none;
     outline: 0 !important;
 }
-.filter .navbar-filter-widget .label-filter-add.btn:hover {
-    color: #363636 !important;
-}
-
-.filter  .active-filters .label-filter-active-filters .label {
-	background: #47B04B !important;
-}
-	.filter  .active-filters .label-filter-active-filters .label:hover {
-	    background: #47B04B;
-	    color: #363636;
-	}
-.filter .active-filters .label-filtering-remove-all {
-	background: #FFF !important;
-	border: 1px solid #47b04b;
-	color: #47b048;
-	text-shadow: none !important;
-}
-	.filter .active-filters .label-filtering-remove-all:hover,
-	.filter .active-filters .label-filtering-remove-all:focus,
-	.filter .active-filters .label-filtering-remove-all:active {
-		background: #47b048 !important;
-		color: #FFF;
+	.filter .navbar-filter-widget .label-filter-add.btn:hover {
+	    color: #363636 !important;
 	}
 .filter .navbar-filter-widget .label-filter.filter-active {
     border-color: #47B04B;
     outline: 0;
     box-shadow: none;
 }
-
+.active-filters .label-filtering-remove-all {
+	background: #FFF !important;
+	border: 1px solid #47b04b;
+	color: #47b048;
+	text-shadow: none !important;
+}
+	.active-filters .label-filtering-remove-all:hover,
+	.active-filters .label-filtering-remove-all:focus,
+	.active-filters .label-filtering-remove-all:active {
+		background: #47b048 !important;
+		color: #FFF;
+	}
+.active-filters .label-filter-active-filters .label {
+	background: #47b04b !important;
+}
+	.active-filters .label-filter-active-filters .label:hover,
+	.active-filters .label-filter-active-filters .label:active {
+		background: #58cc5c;
+		color: #FFF;
+		text-shadow: none;
+	}
 .k8s-label .label-pair .label-value {
     background-color: #47b04b;
     color: #FFFFFF;
@@ -589,7 +584,8 @@ a[href$="create-project"]:active:hover {
     color: #FFFFFF;
 }
 
-.create-route-icon .pficon {
+.create-route-icon .pficon,
+.create-route-icon .fa {
 	color: #47B04B;
 }
 
@@ -601,7 +597,6 @@ a[href$="create-project"]:active:hover {
     color: #fff;
     background-color: #47B04B;
 }
-
 .ui-select-bootstrap .ui-select-toggle,
 .ui-select-bootstrap .ui-select-toggle:hover,
 .ui-select-bootstrap .ui-select-toggle:active,
@@ -613,6 +608,12 @@ a[href$="create-project"]:active:hover {
 }
 .ui-select-bootstrap .ui-select-match.btn-default-focus {
 	background-color: transparent;
+}
+.ui-select-bootstrap .ui-select-choices-row > a:focus,
+.ui-select-bootstrap .ui-select-choices-row > a:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #47B04B;
 }
 
 .sort-pf .form-group .btn-link:hover {
@@ -657,7 +658,20 @@ a[href$="create-project"]:active:hover {
 .metrics-chart .sparkline-chart .c3 .c3-chart-lines .c3-chart-line .c3-areas path{
 	fill: #47B04B !important;
 }
-/* Metrics Chart START */
+/* Metrics Chart END */
+
+/* Builds Chart START */
+.build-trends-chart .c3-chart-bar .c3-shapes-Complete path {
+	stroke: #47B04B !important;
+	fill: #47B04B !important;
+}
+.build-trends-chart .c3-legend-item-Complete .c3-legend-item-tile {
+	stroke: #47B04B !important;
+}
+.build-trends-chart .c3-tooltip-container .c3-tooltip-name--Complete .name span {
+	background-color: #47B04B !important;
+}
+/* Builds Chart END */
 
 /* Overview Page START */
 .overview .service-group-with-route-row .service-group::before,
@@ -763,17 +777,11 @@ a[href$="create-project"]:active:hover {
 	background: #52C256 !important;
 }
 .deployment-donut .scaling-controls a:active,
-.deployment-donut .scaling-controls a:hover, {
+.deployment-donut .scaling-controls a:hover {
     color: #47B04B;
 }
 /* Overview Chart END */
 
-.active-filters .label-filter-active-filters .label {
-	background: #47b04b;
-}
-.active-filters .label-filter-active-filters .label:hover {
-	background: #E7FFE7;
-}
 .btn-default.actions-dropdown-btn {
 	color: #4caf50;
 	background: url("../extensions/images/ic_actions_btn.png") transparent center;
@@ -885,6 +893,13 @@ a[href$="create-project"] ~ div[style$="margin-top: 10px"]{
 .tile.tile-project .project-actions .fa-lg:first-child {
 	margin-left: 5px;
 	margin-right: 10px;
+}
+
+.events-sidebar-expand {
+    font-size: 20px;
+}
+.events-sidebar .events-sidebar-collapse {
+    font-size: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 991px){
