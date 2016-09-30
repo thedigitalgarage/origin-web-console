@@ -38,6 +38,7 @@ function changeAboutusPage() {
       $('h1, p, span').each(function() {
         var text = $(this).html();
         text = text.replace('OpenShift by Red Hat', 'The Digital Garage');
+        text = text.replace('OpenShift projects from a terminal', 'projects');
         text = text.replace(/OpenShift/g, 'The Digital Garage');
         text = text.replace('https://openshift.com', 'http://www.thedigitalgarage.io');
         $(this).html(text);
@@ -48,8 +49,8 @@ function changeAboutusPage() {
     if($('.command-line').size() == 1){ //For Command Line Tools Page
       $('h1, p, span').each(function() {
         var text = $(this).html();
-        text = text.replace(/OpenShift/g, 'The Digital Garage');
         text = text.replace('OpenShift projects from a terminal', 'projects');
+        text = text.replace(/OpenShift/g, 'The Digital Garage');
         $(this).html(text);
       });
       $('.cli-download-label').replaceWith('<h2>Download <code>oc</code>:</h2>');
