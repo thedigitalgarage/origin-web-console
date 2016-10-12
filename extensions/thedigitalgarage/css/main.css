@@ -802,6 +802,12 @@ a[href$="create-project"]:active:hover {
 .overview-metrics .c3-chart .c3-chart-lines .c3-line {
 	fill: #52C256 !important;
 }
+.overview-metrics .c3-chart .c3-chart-lines .c3-line.c3-line-Sent {
+	fill: #52C256 !important;
+}
+.overview-metrics .c3-chart .c3-chart-lines .c3-line.c3-lines-Received {
+	fill: #FF7F0E !important;
+}
 /* Overview Chart END */
 
 .btn-default.actions-dropdown-btn {
