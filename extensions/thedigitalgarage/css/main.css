@@ -808,6 +808,11 @@ a[href$="create-project"]:active:hover {
 .overview-metrics .c3-chart .c3-chart-lines .c3-line.c3-lines-Received {
 	fill: #FF7F0E !important;
 }
+.overview-metrics .c3-tooltip .c3-tooltip-name--Memory .name span,
+.overview-metrics .c3-tooltip .c3-tooltip-name--CPU .name span,
+.overview-metrics .c3-tooltip .c3-tooltip-name--Sent .name span {
+	background: #52C256 !important;
+}
 /* Overview Chart END */
 
 .btn-default.actions-dropdown-btn {
