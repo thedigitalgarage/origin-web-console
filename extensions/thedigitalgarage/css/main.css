@@ -743,16 +743,16 @@ a[href$="create-project"]:active:hover {
 	background: #52C256 !important;
 }
 .pod-status-chart .c3-tooltip .c3-tooltip-name-Terminating .name span {
-	background: #52C256 !important;
+	background: #FFEB3B !important;
 }
 .pod-status-chart .c3-tooltip .c3-tooltip-name-Not.Ready .name span {
-	background: #52C256 !important;
+	background: #FFEB3B !important;
 }
 .pod-status-chart .c3-tooltip .c3-tooltip-name-Succeeded .name span {
-	background: #52C256 !important;
+	background: #1E7A21 !important;
 }
 .pod-status-chart .c3-tooltip .c3-tooltip-name-Unknown .name span {
-	background: #52C256 !important;
+	background: #F9D67A !important;
 }
 
 .pod-block .overview-pods .scaling-controls a:active,
@@ -780,16 +780,16 @@ a[href$="create-project"]:active:hover {
 	background: #52C256 !important;
 }
 .pod-donut .c3-tooltip .c3-tooltip-name--Terminating .name span {
-	background: #52C256 !important;
+	background: #FFEB3B !important;
 }
 .pod-donut .c3-tooltip .c3-tooltip-name--Not-Ready .name span {
-	background: #52C256 !important;
+	background: #FFEB3B !important;
 }
 .pod-donut .c3-tooltip .c3-tooltip-name--Succeeded .name span {
-	background: #52C256 !important;
+	background: #1E7A21 !important;
 }
 .pod-donut .c3-tooltip .c3-tooltip-name--Unknown .name span {
-	background: #52C256 !important;
+	background: #F9D67A !important;
 }
 .deployment-donut .scaling-controls a:active,
 .deployment-donut .scaling-controls a:hover {
