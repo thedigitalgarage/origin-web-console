@@ -504,6 +504,9 @@ a[href$="create-project"]:active:hover {
 	.tile label {
 		color: #FFF;
 	}
+	.title small {
+		color: #EEE;
+	}
 	.tile .tile-target {
 	    color: #FFF;
 	    font-size: 14px;
@@ -791,6 +794,13 @@ a[href$="create-project"]:active:hover {
 .deployment-donut .scaling-controls a:active,
 .deployment-donut .scaling-controls a:hover {
     color: #47B04B;
+}
+
+.overview-metrics .c3-chart .c3-chart-lines .c3-shape {
+	fill: #52C256 !important;
+}
+.overview-metrics .c3-chart .c3-chart-lines .c3-line {
+	fill: #52C256 !important;
 }
 /* Overview Chart END */
 
