@@ -807,7 +807,7 @@ a[href$="create-project"]:active:hover {
 	fill: #52C256 !important;
 }
 .overview-metrics .c3-chart .c3-chart-lines .c3-line {
-	fill: #52C256 !important;
+	stroke: #52C256 !important;
 }
 .overview-metrics .c3-chart .c3-chart-lines .c3-line.c3-line-Sent {
 	fill: #52C256 !important;
@@ -941,6 +941,13 @@ a[href$="create-project"] ~ div[style$="margin-top: 10px"]{
 .events-sidebar .events-sidebar-collapse {
     font-size: 20px;
 }
+
+/* Log View START */
+.log-view .log-scroll a:focus,
+.log-view .log-scroll a:hover {
+    color: #58cc5c;
+}
+/* Log View END */
 
 @media (min-width: 768px) and (max-width: 991px){
 	a[href$="create-project"] ~ div {
