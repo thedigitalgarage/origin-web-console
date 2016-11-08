@@ -109,6 +109,10 @@ button, input, select, textarea {
     border-bottom-width: 1px;
 }
 
+.form-control option:hover {
+    background: #47B04B;
+}
+
 label {
 	color: #47b04b;
 }
@@ -511,7 +515,7 @@ a[href$="create-project"]:active:hover {
 	.tile label {
 		color: #FFF;
 	}
-	.title small {
+	.tile small {
 		color: #EEE;
 	}
 	.tile .tile-target {
@@ -809,10 +813,16 @@ a[href$="create-project"]:active:hover {
 .overview-metrics .c3-chart .c3-chart-lines .c3-line {
 	stroke: #52C256 !important;
 }
-.overview-metrics .c3-chart .c3-chart-lines .c3-line.c3-line-Sent {
+.overview-metrics .c3-chart .c3-target-Sent .c3-chart-lines .c3-shape {
 	fill: #52C256 !important;
 }
-.overview-metrics .c3-chart .c3-chart-lines .c3-line.c3-lines-Received {
+.overview-metrics .c3-chart .c3-target-Sent .c3-chart-lines .c3-line {
+	fill: #52C256 !important;
+}
+.overview-metrics .c3-chart .c3-target-Received .c3-chart-lines .c3-shape {
+	fill: #FF7F0E !important;
+}
+.overview-metrics .c3-chart .c3-target-Received .c3-chart-lines .c3-line {
 	fill: #FF7F0E !important;
 }
 .overview-metrics .c3-tooltip .c3-tooltip-name--Memory .name span,
@@ -821,6 +831,32 @@ a[href$="create-project"]:active:hover {
 	background: #52C256 !important;
 }
 /* Overview Chart END */
+
+/* Monitoring Chart START*/
+.monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-shape {
+	fill: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-line {
+	stroke: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-chart .c3-target-Sent .c3-chart-lines .c3-shape {
+	fill: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-chart .c3-target-Sent .c3-chart-lines .c3-line {
+	fill: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-chart .c3-target-Received .c3-chart-lines .c3-shape {
+	fill: #FF7F0E !important;
+}
+.monitoring-page .metrics-full .c3-chart .c3-target-Received .c3-chart-lines .c3-line {
+	fill: #FF7F0E !important;
+}
+.monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--Memory .name span,
+.monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--CPU .name span,
+.monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--Sent .name span {
+	background: #52C256 !important;
+}
+/* Monitoring Chart END*/
 
 .btn-default.actions-dropdown-btn {
 	color: #4caf50;
@@ -863,7 +899,6 @@ a[href$="create-project"]:active:hover {
 .pod-template-block .pod-template span[data-icon] {
     color: #47B04B;
 }
-
 
 /* Projects Page */
 div.no-sidebar .container > .gutter-top > h1[style$="display: inline-block"] {
@@ -948,6 +983,11 @@ a[href$="create-project"] ~ div[style$="margin-top: 10px"]{
     color: #58cc5c;
 }
 /* Log View END */
+
+.key-value-editor .as-sortable-placeholder {
+	border-top:2px solid #47B04B !important;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px){
 	a[href$="create-project"] ~ div {
