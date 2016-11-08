@@ -813,16 +813,16 @@ a[href$="create-project"]:active:hover {
 .overview-metrics .c3-chart .c3-chart-lines .c3-line {
 	stroke: #52C256 !important;
 }
-.overview-metrics .c3-chart .c3-target-Sent .c3-chart-lines .c3-shape {
+.overview-metrics .c3-chart .c3-chart-lines .c3-target-Sent .c3-shape {
 	fill: #52C256 !important;
 }
-.overview-metrics .c3-chart .c3-target-Sent .c3-chart-lines .c3-line {
+.overview-metrics .c3-chart .c3-chart-lines .c3-target-Sent .c3-line {
 	fill: #52C256 !important;
 }
-.overview-metrics .c3-chart .c3-target-Received .c3-chart-lines .c3-shape {
+.overview-metrics .c3-chart .c3-chart-lines .c3-target-Received .c3-shape {
 	fill: #FF7F0E !important;
 }
-.overview-metrics .c3-chart .c3-target-Received .c3-chart-lines .c3-line {
+.overview-metrics .c3-chart .c3-chart-lines .c3-target-Received .c3-line {
 	fill: #FF7F0E !important;
 }
 .overview-metrics .c3-tooltip .c3-tooltip-name--Memory .name span,
@@ -839,22 +839,37 @@ a[href$="create-project"]:active:hover {
 .monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-line {
 	stroke: #52C256 !important;
 }
-.monitoring-page .metrics-full .c3-chart .c3-target-Sent .c3-chart-lines .c3-shape {
+.monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-target-Sent .c3-shape {
 	fill: #52C256 !important;
 }
-.monitoring-page .metrics-full .c3-chart .c3-target-Sent .c3-chart-lines .c3-line {
+.monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-target-Sent .c3-line {
 	fill: #52C256 !important;
 }
-.monitoring-page .metrics-full .c3-chart .c3-target-Received .c3-chart-lines .c3-shape {
+.monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-target-Received .c3-shape {
 	fill: #FF7F0E !important;
 }
-.monitoring-page .metrics-full .c3-chart .c3-target-Received .c3-chart-lines .c3-line {
+.monitoring-page .metrics-full .c3-chart .c3-chart-lines .c3-target-Received .c3-line {
 	fill: #FF7F0E !important;
+}
+.monitoring-page .metrics-full .c3-tooltip .name span {
+	background: #52C256 !important;
 }
 .monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--Memory .name span,
 .monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--CPU .name span,
 .monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--Sent .name span {
 	background: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-tooltip .c3-tooltip-name--Received .name span {
+	background: #ff7f0e !important;
+}
+.monitoring-page .metrics-full .c3-legend-item .c3-legend-item-tile {
+	stroke: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-legend-item.c3-legend-item-Sent .c3-legend-item-tile {
+	stroke: #52C256 !important;
+}
+.monitoring-page .metrics-full .c3-legend-item.c3-legend-item-Received .c3-legend-item-tile {
+	stroke: #ff7f0e !important;
 }
 /* Monitoring Chart END*/
 
